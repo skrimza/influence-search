@@ -201,6 +201,16 @@ li {
     width: 100%;
     position: absolute;
     bottom: 0;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.header__prod:hover span.span-round,
+.header__influence:hover span.span-round {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border-color: #A6B94C;
 }
 
 .prod-image,
@@ -245,6 +255,31 @@ li {
     line-height: 20.72px;
     margin-top: 15px;
     position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.span-round {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.prod-round {
+    bottom: 0;
+    left: 20%;
+    border: 2px solid #fff;
+    background: #ffffff8a;
+}
+
+.influence-round {
+    bottom: 0;
+    right: 0;
+    transform: translateY(50%);
+    border: 2px solid #6F764D;
+    background: #6F764D4A;
 }
 
 .prod-image img,
