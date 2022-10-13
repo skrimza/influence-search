@@ -189,6 +189,13 @@ li {
     transition: 0s;
 }
 
+#prod-btn.active,
+#influence-btn.active {
+    border: 2px solid #6F764D;
+    background: #6F764D;
+    color: #fff;
+}
+
 .header__prod {
     left: 0;
     transform: translate(-40%, 18.5%);
