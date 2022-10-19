@@ -302,6 +302,80 @@ li {
 }
 
 
+/* modal window */
+
+.modal {
+    position: absolute;
+}
+
+.overlay {
+    z-index: 50;
+}
+
+.modal-window {
+    width: 700px;
+    height: 500px;
+    position: fixed;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, 50%);
+    background: #fff;
+    border: 2px solid #6F764D;
+    z-index: 100;
+    border-radius: 50px;
+}
+
+.modal-window__choise {
+    display: flex;
+    justify-content: center;
+}
+
+.choise-btn {
+    padding: 15px 20px;
+    border-left: 1px solid #6C6C6C;
+    border-right: 1px solid #6C6C6C;
+    border-bottom: 2px solid #6F764D;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+#choise__btn-product.active {
+    border-top: 2px solid #6F764D;
+    border-bottom: none;
+}
+
+#choise__btn-influence.active {
+    border-top: 2px solid #6F764D;
+    border-bottom: none;
+}
+
+.choise-btn:first-of-type {
+    margin-right: 20px;
+}
+
+.modal-window__form-one {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 511px;
+    margin: 0 auto 15px;
+    width: 100%;
+}
+
+.modal-window__form-one input {
+    width: 400px;
+    padding: 15px 10px;
+    border-radius: 20px;
+    border: 1px solid #c4c2c2
+}
+
+
 /* section card */
 
 .card {
