@@ -323,6 +323,7 @@ li {
     border: 2px solid #6F764D;
     z-index: 100;
     border-radius: 50px;
+    font-family: 'Inter', sans-serif;
 }
 
 .modal-window__choise {
@@ -335,7 +336,7 @@ li {
     border-left: 1px solid #6C6C6C;
     border-right: 1px solid #6C6C6C;
     border-bottom: 2px solid #6F764D;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -357,6 +358,7 @@ li {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+    font-size: 18px;
 }
 
 .wrapper {
@@ -373,6 +375,27 @@ li {
     padding: 15px 10px;
     border-radius: 20px;
     border: 1px solid #c4c2c2
+}
+
+.modal__form-btn {
+    padding: 15px 20px;
+    border: 2px solid #000000;
+    max-width: 150px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.5s ease-in;
+}
+
+.modal__form-btn:hover {
+    background-color: #000000;
+    color: #EDEDED;
+}
+
+.modal__form-btn:active {
+    background-color: #000000;
+    color: #EDEDED;
 }
 
 
