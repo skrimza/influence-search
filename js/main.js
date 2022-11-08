@@ -70,5 +70,3 @@ tabs.forEach((tab, index) => {
         contents[index].classList.add('active');
     })
 });
-
-console.log(tabs[0]);
