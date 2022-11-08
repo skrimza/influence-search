@@ -353,6 +353,8 @@ li {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    max-height: 65px;
+    height: 100%;
 }
 
 .choise-btn {
@@ -364,7 +366,7 @@ li {
     font-size: 20px;
     font-weight: 500;
     border-radius: 25px;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 .choise-btn.hover {
@@ -372,26 +374,12 @@ li {
     border-bottom: 1px solid #6C6C6C;
 }
 
-.choise-btn.active {
-    background: rgb(111, 118, 77);
-    background: linear-gradient(0deg, rgba(111, 118, 77, 1) 45%, rgba(108, 108, 108, 1) 100%);
-}
-
-#choise__btn-product.active {
-    border-top: 2px solid #6F764D;
-    border-bottom: none;
-}
-
-#choise__btn-influence.active {
-    border-top: 2px solid #6F764D;
-    border-bottom: none;
-}
-
 .choise-btn:first-of-type {
     margin-right: 20px;
 }
 
-.modal-window__form-one {
+.modal-window__form-one,
+.modal-window__form-two {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -407,13 +395,24 @@ li {
     width: 100%;
 }
 
-.modal-window__form-one input {
-    width: 400px;
-    padding: 15px 10px;
+.modal-window__form-one input,
+.modal-window__form-two input {
+    width: 365px;
+    padding: 12px 10px;
     border-radius: 50px;
     background: linear-gradient(225deg, #dbdbdb, #ffffff);
     box-shadow: -5px 5px 11px #cfcfcf, 5px -5px 11px #ffffff;
     border: none;
+}
+
+.modal-window__form-one,
+.modal-window__form-two {
+    display: none;
+}
+
+.modal-window__form-one.active,
+.modal-window__form-two.active {
+    display: flex;
 }
 
 .modal__form-btn {
